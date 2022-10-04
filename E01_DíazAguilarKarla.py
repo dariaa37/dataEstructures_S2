@@ -6,9 +6,10 @@ linkedList = []
 while True:
     menu = int(input("<<< Menú >>>\n\n¿Qué desea hacer?\n1. Mostrar\n2. Insertar\n3. Eliminar\n4. Salir\n\n"))
     
-    if menu == 1:   # Mostrar
-        sizeL = len(linkedList)     # Size List
-
+    if menu == 1:   # Añadir
+        noFactura = int(input("Número de factura = \t"))
+        importe = int(input("Importe = \t"))
+        
         if len(linkedList) == 0:
             print("Por el momento tu lista esta vacia, ingresa un dato por favor\n")
         else:
